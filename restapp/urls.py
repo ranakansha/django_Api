@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.product_list),
     path('save',views.product_save),
+    path('dist/<int:id>',views.get_individual),
 ]
